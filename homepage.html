@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./assets/flipcard.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./w3images/ai-5202869_1280.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="./homepage.html#home" class="w3-bar-item w3-wide"> <img class="" src="./w3images/logo.png" alt="Logo" width="45" height="45"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small ">
+      <a href="./homepage.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="./homepage.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="./blogs.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> BLOGS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="./homepage.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="./homepage.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="./blogs.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOGS</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white d-flex flex-column justify-content-center align-items-center" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small h2 font-weight-bold">AICVS</span><br>
+    <span class="h5">Artificial Intelligence and Computer Vision Society</span>
+    
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light" ><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/aicvs" class="text-light"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  </div>
+</header>
+
+<!-- About Section -->
+
+<div class="w3-container " style="padding-top: 70px"  id="about">
+  <h3 class="w3-center ">ABOUT US</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-half" style="padding:8px 20px">
+      <i class="fa fa-desktop fa-3x "></i>
+      <p class="w3-large font-weight-bold">What is AICVS?</p>
+      <p>AICVS is the Artificial Intelligence and Computer Vision Society of Cummins College of Engineering. We at AICVS adopt an enthusiastic and dedicated approach to learn and put in the effort, as we start from the very basics, and develop our skills as we move forward. We at AICVS conduct various practical workshops, guest lectures, seminars, Kaggle competitions, that all the students can participate in.</p>
+    </div>
+    <div class="w3-half" style="padding:8px 20px">
+      <i class="fa fa-bullseye fa-3x " aria-hidden="true"></i>
+      <p class="w3-large font-weight-bold">Mission</p>
+      <p>To introduce students to the thriving domain of AI and Computer Vision. We aim to equip them with primary skillset in Deep Learning and  various algorithms. We aim to guide to learn to implement these techniques and better understand what happens behind the scenes.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Intro Section -->
+<div class="w3-container " style="padding:70px 140px"  id="about">
+  <h3 class="w3-center ">How AI ML has changed the world</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    From the research we do on the Internet to the goods that come to our door with a single click, to recommendations on Netflix,  AI technology is directly in our lives. AI is applied in all sectors including healthcare, banking, logistics and travel industry to provide superior experience. The latest developments in Artificial Intelligence are chatbots, smart cars and IoT devices. 
+AI has gone from a science-fiction dream to a critical part of our everyday lives.
+    
+  </div>
+</div>
+
+
+
+<div class="w3-container countainer-fluid" style="padding:70px 16px" id="team">
+  <h3 class="w3-center">AICVS Student Committee 2021-22</h3>
+  <p class="w3-center w3-large">The ones who runs this Club</p>
+  <div style="margin-top:64px">
+  <div class="row" >
+  <div class="col-md-3 col-sm-6">
+    <div class="flip-card" style=" display: inline-block">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="w3images/sakshi_nalawade.jpg" alt="Avatar" style="width:230px;height:240px;">
+          <p class="heading">Head Coordinator </p>
+          <h4 class="headname">Sakshi Nalawade</h4>
+          <p>sakshi.nalawade@cumminscollege.in</p>
+        </div>
+        <div class="flip-card-back">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <div class="flip-card" style=" display: inline-block">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="w3images/sejal_kshrisagar.jpg" alt="Avatar" style="width:230px;height:240px;">
+          <p class="heading">Head of  Projects & Internships </p>
+          <h4 class="headname">Sejal Kshrisagar</h4>
+          <p>sejal.kshrisagar@cumminscollege.in</p>
+        </div>
+        <div class="flip-card-back">
+          <h1 class="info">Team</h1>
+          <ul style="font-size: large;">
+            <hr>
+            <li>Pranjal Chouhan</li>
+            <li>Juhi Ganvir</li>
+            <li>Sanika Kalloorkar</li>
+            <li>Vaishnavi Khillari</li>
+            <li>Swikruti Maind</li>
+            <li>Rutuja Wasu</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <div class="flip-card" style=" display: inline-block">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="w3images/ritika_pande.jpg" alt="Avatar" style="width:230px;height:240px;">
+          <p class="heading">Head of  Public Relations </p>
+          <h4 class="headname">Ritika Pande</h4>
+          <p>ritika.pande@cumminscollege.in</p>
+        </div>
+        <div class="flip-card-back">
+          <h1 class="info">Team</h1>
+          <ul  style="font-size: large;">
+            <hr>
+            <li>Gauri Amin</li>
+            <li>Nisha Deshmukh</li>
+            <li>Yamini Donogaonkar</li>
+            <li>Piyusha Nair</li>
+            <li>Bhakti Patil</li>
+            <li>Sandhya Matur</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <div class="flip-card" style=" display: inline-block">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="w3images/deeksha_jagtap.jpg" alt="Avatar" style="width:230px;height:240px;">
+          <p class="heading">Head of Website & Content </p>
+          <h4 class="headname">Deeksha Jagtap</h4>
+          <p>deeksha.jagtap@cumminscollege.in</p>
+        </div>
+        <div class="flip-card-back">
+          <h1 class="info">Team</h1>
+          <ul  style="font-size: large;">
+            <hr>
+            <li>Sakshi Ingale</li>
+            <li>Sannidhi Gokhale</li>
+            <li>Mukta Ogale</li>
+            <li>Diya Kantroo</li>
+            <li>Khushi Tilokani</li>
+            <li>Madhura Patil</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--
+ Work Section 
+
+<div class="w3-container" style="padding:70px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="./w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="./w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="./w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
+
+-->
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.instagram.com/aicvs/" class="text-light"><i class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/aicvs/"></i></a>
+    <a href="https://www.linkedin.com/company/cummins-aicvs/mycompany/" class="text-light"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZfSZGZDtVjPdkFkJqCQJXMjjcqxVrGvJffFvBTRKNPGcmXMlQxctgbpgdCrfKFfjsJCHL" class="text-light"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/aicvs" class="text-light"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/channel/UCYkmq4s5ciIau6BFI97XJlA" class="text-light"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  
+  </div>
+</footer>
+ 
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+$('.flip').click(function() {
+  $(this).find('.card').addClass('flipped').mouseleave(function() {
+    $(this).removeClass('flipped');
+  });
+  return true;
+});
+
+</script>
+<script src="/js/index.js"></script>
+</body>
+</html>
