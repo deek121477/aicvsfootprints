@@ -1,5 +1,5 @@
 <?php
 
- include_one("homepage.html") ;
+ include_one("index.html") ;
 
 ?>
